@@ -204,13 +204,24 @@ p{
     transition: all .4s linear;
 }
 .energo_block .last_t{
-    margin-top: 20px;
-    display: inline-block;
-    font-size: 22px;
+    margin-top: 20px; 
+    font-size: 18px;
+    gap: 30px;
     padding: 20px;
     background: #0000007a;
     border-radius: 8px;
     border: 1px solid #ffffff8b;
+}
+.articl_pr p{
+    margin: 0 0 10px;
+    font-style: italic;
+}
+.bottom_pr{
+    margin-top: 40px;
+}
+.bottom_pr p{
+    font-style: normal;
+    margin: 0 0 4px;
 }
 .toform img{
     width: 20px;
@@ -220,7 +231,7 @@ p{
 }
 .energo_block>div{
     margin: 60px auto;
-    padding: 80px 150px;
+    padding: 80px 50px;
     background: #01483db5;
     position: relative;
     overflow: hidden;
@@ -1052,6 +1063,23 @@ footer{
 .open_more_com{
     display: none;
 }
+.ava_pr{
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.grid_content{
+    display: flex;
+}
+.ava_pr img{
+    max-width: 1000px;
+    max-height: 1000px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 @media screen and (min-width: 1400px) {
     .container{
         width: 90%;
@@ -1085,7 +1113,13 @@ footer{
     .list_inv p{
         font-size: 22px;
     }
- 
+    .ava_pr{
+        float: left;
+        margin-right: 20px;
+    }
+    .energo_block .last_t{
+        display: block;
+    }
     .list_inv{
         display: flex;
         flex-wrap: wrap;
@@ -1153,6 +1187,11 @@ footer{
     .type_items{
         display: flex;
         flex-direction: column;
+    }
+    .ava_pr {
+        width: 200px;
+        min-width: 200px;
+        height: 200px;
     }
     .content_f li{
         width: 100%;
@@ -1314,4 +1353,11 @@ footer{
     .reviews-item:nth-child(-n+3) {
         display: block;
       }
+    .ava_pr{
+        float: none;
+        margin: 10px auto 20px;
+    }
+    .articl_pr p{
+        font-size: 16px;
+    }
 }
